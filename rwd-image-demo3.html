@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Picture Demo</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-
-  
-
-<img src="images/eifel-tower.jpg" alt="Eifel Tower" style="width:auto;">
-
-
-<p>Resize the browser width and the image will change at 400px.</p>
-
+  <picture>
+    <source srcset="images/eifel-tower-small.jpg" media="(max-width: 400px)">
+    <source srcset="images/eifel-tower.jpg">
+    <img src="images/eifel-tower.jpg" alt="Eiffel Tower">
+  </picture>
+  <p>Resize the browser width and the image will change at 400px.</p>
 </body>
 </html>

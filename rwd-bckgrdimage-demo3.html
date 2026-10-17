@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-
-body {
-  width: 100%;
-  background-image: url('images/water-lily.jpg');
-  background-repeat: no-repeat;
-  
-  background-color:rgb(203, 247, 220);
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Body Background Image</title>
+  <style>
+    html {
+      min-height: 100%;
+      background-color: rgb(203, 247, 220);
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      box-sizing: border-box;
+      background-image: url('images/water-lily.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgb(203, 247, 220);
+    }
+  </style>
 </head>
 <body>
-
-<p>Resize the browser window to see the effect.</p>
-
-<div></div>
-
+  <p>Resize the browser window to see the effect.</p>
+  <div></div>
 </body>
 </html>
